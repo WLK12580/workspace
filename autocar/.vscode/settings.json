@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "/home/wlk/workspace/autocar/src",
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}
