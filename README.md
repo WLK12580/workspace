@@ -8,4 +8,6 @@
 
 mysql登录：
 启动终端：sudo mysql 确认即可
-![Alt text](image.png)
+![Alt text](Image/image.png)
+Mysql查询
+![Alt text](Image/image-1.png)
