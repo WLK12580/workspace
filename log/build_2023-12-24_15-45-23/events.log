@@ -1,0 +1,217 @@
+[0.000000] (-) TimerEvent: {}
+[0.000128] (src) JobQueued: {'identifier': 'src', 'dependencies': OrderedDict()}
+[0.001052] (src) JobStarted: {'identifier': 'src'}
+[0.076307] (src) JobProgress: {'identifier': 'src', 'progress': 'cmake'}
+[0.077080] (src) Command: {'cmd': ['/usr/bin/cmake', '/home/wlk/workspace/autocar/src', '-DCMAKE_INSTALL_PREFIX=/home/wlk/workspace/autocar/install/src'], 'cwd': '/home/wlk/workspace/autocar/build/src', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'wlk'), ('GIT_ASKPASS', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}'), ('HOME', '/home/wlk'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66759183-9aff-4c1d-81c7-2d8f5b0e47fd.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wlk'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/706_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/wlk/anaconda3/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/mpich-4.1.2/bin:~/anaconda3/bin:/home/wlk/Install/Fast-DDS/Fast-DDS-Gen/scripts:/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/usr/local/mpich-4.1.2/bin:~/anaconda3/bin:/home/wlk/anaconda3/bin:/home/wlk/anaconda3/condabin:/home/wlk/Install/Fast-DDS/Fast-DDS-Gen/scripts:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Installsoftware/MPI/Bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/mnt/d/MyFiles/Opencv4.1/x64/vc16/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Installsoftware/OpenCV4.5.1/opencv/build/x64/vc15/bin:/mnt/c/Installsoftware/QT/Qt5.9.9/5.9.9/msvc2017_64/bin:/mnt/c/Installsoftware/cudnn-11.3-windows-x64-v8.2.0.53/cuda/bin:/mnt/c/Installsoftware/opencv_build/install/x64/vc16/bin:/mnt/c/Program Files (x86)/dotnet:/mnt/c/Installsoftware/MiKTeX/miktex/bin/x64:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/lib:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/lib:/mnt/c/Installsoftware/VTK-9.2.2/install_release/bin:/mnt/d/Installed/qtcreator-11.0.2/6.6.0/msvc2019_64/lib:/mnt/d/Installed/qtcreator-11.0.2/6.6.0/msvc2019_64/bin:/mnt/c/Installsoftware/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin:/mnt/c/Installsoftware/Anaconda:/mnt/c/Installsoftware/Anaconda/Library/mingw-w64/bin:/mnt/c/Installsoftware/Anaconda/Library/usr/bin:/mnt/c/Installsoftware/Anaconda/Library/bin:/mnt/c/Installsoftware/Anaconda/Scripts:/mnt/c/Users/15938/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Bandizip:/mnt/c/Installsoftware/PyCharm 2020.1/bin:/mnt/c/Installsoftware/cudnn-10.1-windows10-x64-v8.0.5.39/lib/x64:/mnt/c/Installsoftware/texlive/2021/bin/win32:/mnt/c/Installsoftware/CLion/CLion 2019.3.3/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/VTK/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/FLANN/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Qhull/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Boost/lib:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Boost/include:/mnt/c/Program Files/OpenNI2/Redist:/mnt/c/Program Files/OpenNI2/Tools:/mnt/c/Program Files/OpenNI2/Lib:/mnt/c/Installsoftware/TensorRT-7.2.3.4.Windows10.x86_64.cuda-10.2.cudnn8.1/TensorRT-7.2.3.4/lib:/mnt/c/Installsoftware/libtorch_cuda111/lib:/mnt/d/Installed/Microsoft VS Code/bin:/mnt/c/Installsoftware/VTK-9.2.2/install_release/bin:/mnt/c/Installsoftware/CMake/bin:/mnt/c/Installsoftware/opencv_build/install/x64/vc16/bin:/snap/bin'), ('WT_SESSION', '2376c0b2-5d4c-4fc3-a258-1c4ceb4694a0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ccb5a9dba.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/wlk/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wlk/workspace/autocar/build/src'), ('CONDA_EXE', '/home/wlk/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/wlk/anaconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099511] (-) TimerEvent: {}
+[0.199882] (-) TimerEvent: {}
+[0.300260] (-) TimerEvent: {}
+[0.379277] (src) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400362] (-) TimerEvent: {}
+[0.500675] (-) TimerEvent: {}
+[0.601021] (-) TimerEvent: {}
+[0.701349] (-) TimerEvent: {}
+[0.801673] (-) TimerEvent: {}
+[0.901972] (-) TimerEvent: {}
+[1.002260] (-) TimerEvent: {}
+[1.102547] (-) TimerEvent: {}
+[1.202880] (-) TimerEvent: {}
+[1.303162] (-) TimerEvent: {}
+[1.403458] (-) TimerEvent: {}
+[1.433543] (src) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.503562] (-) TimerEvent: {}
+[1.603846] (-) TimerEvent: {}
+[1.704148] (-) TimerEvent: {}
+[1.804442] (-) TimerEvent: {}
+[1.904755] (-) TimerEvent: {}
+[2.005082] (-) TimerEvent: {}
+[2.105370] (-) TimerEvent: {}
+[2.205646] (-) TimerEvent: {}
+[2.227724] (src) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.305761] (-) TimerEvent: {}
+[2.406054] (-) TimerEvent: {}
+[2.476252] (src) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.483290] (src) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.484160] (src) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.484875] (src) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.487615] (src) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.506196] (-) TimerEvent: {}
+[2.606532] (-) TimerEvent: {}
+[2.706814] (-) TimerEvent: {}
+[2.716491] (src) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.723272] (src) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.723542] (src) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.723998] (src) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.727232] (src) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.806960] (-) TimerEvent: {}
+[2.874065] (src) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.907100] (-) TimerEvent: {}
+[2.946012] (src) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.007287] (-) TimerEvent: {}
+[3.107616] (-) TimerEvent: {}
+[3.206846] (src) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.207701] (-) TimerEvent: {}
+[3.210898] (src) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.217308] (src) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.229819] (src) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.246745] (src) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.303179] (src) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.304792] (src) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.307878] (-) TimerEvent: {}
+[3.408249] (-) TimerEvent: {}
+[3.508677] (-) TimerEvent: {}
+[3.609033] (-) TimerEvent: {}
+[3.709324] (-) TimerEvent: {}
+[3.809672] (-) TimerEvent: {}
+[3.910015] (-) TimerEvent: {}
+[4.010421] (-) TimerEvent: {}
+[4.110731] (-) TimerEvent: {}
+[4.211044] (-) TimerEvent: {}
+[4.311419] (-) TimerEvent: {}
+[4.411769] (-) TimerEvent: {}
+[4.512109] (-) TimerEvent: {}
+[4.612431] (-) TimerEvent: {}
+[4.712802] (-) TimerEvent: {}
+[4.813110] (-) TimerEvent: {}
+[4.913396] (-) TimerEvent: {}
+[5.013685] (-) TimerEvent: {}
+[5.114003] (-) TimerEvent: {}
+[5.214283] (-) TimerEvent: {}
+[5.314600] (-) TimerEvent: {}
+[5.414899] (-) TimerEvent: {}
+[5.515176] (-) TimerEvent: {}
+[5.615452] (-) TimerEvent: {}
+[5.715768] (-) TimerEvent: {}
+[5.768593] (src) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.815881] (-) TimerEvent: {}
+[5.916212] (-) TimerEvent: {}
+[6.016503] (-) TimerEvent: {}
+[6.116816] (-) TimerEvent: {}
+[6.217118] (-) TimerEvent: {}
+[6.317439] (-) TimerEvent: {}
+[6.417731] (-) TimerEvent: {}
+[6.518005] (-) TimerEvent: {}
+[6.618399] (-) TimerEvent: {}
+[6.718774] (-) TimerEvent: {}
+[6.819066] (-) TimerEvent: {}
+[6.919481] (-) TimerEvent: {}
+[7.019802] (-) TimerEvent: {}
+[7.120170] (-) TimerEvent: {}
+[7.220554] (-) TimerEvent: {}
+[7.320845] (-) TimerEvent: {}
+[7.421180] (-) TimerEvent: {}
+[7.521488] (-) TimerEvent: {}
+[7.621774] (-) TimerEvent: {}
+[7.722074] (-) TimerEvent: {}
+[7.822365] (-) TimerEvent: {}
+[7.922721] (-) TimerEvent: {}
+[8.023029] (-) TimerEvent: {}
+[8.123353] (-) TimerEvent: {}
+[8.223695] (-) TimerEvent: {}
+[8.324005] (-) TimerEvent: {}
+[8.424317] (-) TimerEvent: {}
+[8.524624] (-) TimerEvent: {}
+[8.616993] (src) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.624713] (-) TimerEvent: {}
+[8.724981] (-) TimerEvent: {}
+[8.825330] (-) TimerEvent: {}
+[8.925625] (-) TimerEvent: {}
+[9.025920] (-) TimerEvent: {}
+[9.126215] (-) TimerEvent: {}
+[9.226503] (-) TimerEvent: {}
+[9.326829] (-) TimerEvent: {}
+[9.427138] (-) TimerEvent: {}
+[9.527408] (-) TimerEvent: {}
+[9.627731] (-) TimerEvent: {}
+[9.728012] (-) TimerEvent: {}
+[9.828289] (-) TimerEvent: {}
+[9.928596] (-) TimerEvent: {}
+[10.028914] (-) TimerEvent: {}
+[10.129261] (-) TimerEvent: {}
+[10.229577] (-) TimerEvent: {}
+[10.329855] (-) TimerEvent: {}
+[10.430166] (-) TimerEvent: {}
+[10.530442] (-) TimerEvent: {}
+[10.630796] (-) TimerEvent: {}
+[10.731120] (-) TimerEvent: {}
+[10.831466] (-) TimerEvent: {}
+[10.931796] (-) TimerEvent: {}
+[11.032154] (-) TimerEvent: {}
+[11.132485] (-) TimerEvent: {}
+[11.232838] (-) TimerEvent: {}
+[11.333152] (-) TimerEvent: {}
+[11.433505] (-) TimerEvent: {}
+[11.533936] (-) TimerEvent: {}
+[11.634403] (-) TimerEvent: {}
+[11.734735] (-) TimerEvent: {}
+[11.835043] (-) TimerEvent: {}
+[11.935374] (-) TimerEvent: {}
+[12.035664] (-) TimerEvent: {}
+[12.136028] (-) TimerEvent: {}
+[12.236329] (-) TimerEvent: {}
+[12.336664] (-) TimerEvent: {}
+[12.436952] (-) TimerEvent: {}
+[12.537223] (-) TimerEvent: {}
+[12.637533] (-) TimerEvent: {}
+[12.737818] (-) TimerEvent: {}
+[12.838111] (-) TimerEvent: {}
+[12.938469] (-) TimerEvent: {}
+[13.038789] (-) TimerEvent: {}
+[13.139092] (-) TimerEvent: {}
+[13.239461] (-) TimerEvent: {}
+[13.339736] (-) TimerEvent: {}
+[13.440044] (-) TimerEvent: {}
+[13.540370] (-) TimerEvent: {}
+[13.640646] (-) TimerEvent: {}
+[13.720265] (src) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[13.728705] (src) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[13.740824] (-) TimerEvent: {}
+[13.841064] (-) TimerEvent: {}
+[13.941363] (-) TimerEvent: {}
+[13.946051] (src) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[13.946371] (src) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[14.041499] (-) TimerEvent: {}
+[14.141828] (-) TimerEvent: {}
+[14.204822] (src) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[14.206242] (src) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[14.242001] (-) TimerEvent: {}
+[14.342299] (-) TimerEvent: {}
+[14.369367] (src) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[14.439742] (src) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[14.439997] (src) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[14.440051] (src) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[14.440596] (src) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.441461] (src) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[14.441557] (src) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[14.442027] (src) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.442366] (-) TimerEvent: {}
+[14.443241] (src) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.446732] (src) StdoutLine: {'line': b'-- Generating done\n'}
+[14.447800] (src) StdoutLine: {'line': b'-- Build files have been written to: /home/wlk/workspace/autocar/build/src\n'}
+[14.456706] (src) CommandEnded: {'returncode': 0}
+[14.457424] (src) JobProgress: {'identifier': 'src', 'progress': 'build'}
+[14.458601] (src) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wlk/workspace/autocar/build/src', '--', '-j16', '-l16'], 'cwd': '/home/wlk/workspace/autocar/build/src', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'wlk'), ('GIT_ASKPASS', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}'), ('HOME', '/home/wlk'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66759183-9aff-4c1d-81c7-2d8f5b0e47fd.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wlk'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/706_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/wlk/anaconda3/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/mpich-4.1.2/bin:~/anaconda3/bin:/home/wlk/Install/Fast-DDS/Fast-DDS-Gen/scripts:/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/usr/local/mpich-4.1.2/bin:~/anaconda3/bin:/home/wlk/anaconda3/bin:/home/wlk/anaconda3/condabin:/home/wlk/Install/Fast-DDS/Fast-DDS-Gen/scripts:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Installsoftware/MPI/Bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/mnt/d/MyFiles/Opencv4.1/x64/vc16/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Installsoftware/OpenCV4.5.1/opencv/build/x64/vc15/bin:/mnt/c/Installsoftware/QT/Qt5.9.9/5.9.9/msvc2017_64/bin:/mnt/c/Installsoftware/cudnn-11.3-windows-x64-v8.2.0.53/cuda/bin:/mnt/c/Installsoftware/opencv_build/install/x64/vc16/bin:/mnt/c/Program Files (x86)/dotnet:/mnt/c/Installsoftware/MiKTeX/miktex/bin/x64:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/lib:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/lib:/mnt/c/Installsoftware/VTK-9.2.2/install_release/bin:/mnt/d/Installed/qtcreator-11.0.2/6.6.0/msvc2019_64/lib:/mnt/d/Installed/qtcreator-11.0.2/6.6.0/msvc2019_64/bin:/mnt/c/Installsoftware/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin:/mnt/c/Installsoftware/Anaconda:/mnt/c/Installsoftware/Anaconda/Library/mingw-w64/bin:/mnt/c/Installsoftware/Anaconda/Library/usr/bin:/mnt/c/Installsoftware/Anaconda/Library/bin:/mnt/c/Installsoftware/Anaconda/Scripts:/mnt/c/Users/15938/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Bandizip:/mnt/c/Installsoftware/PyCharm 2020.1/bin:/mnt/c/Installsoftware/cudnn-10.1-windows10-x64-v8.0.5.39/lib/x64:/mnt/c/Installsoftware/texlive/2021/bin/win32:/mnt/c/Installsoftware/CLion/CLion 2019.3.3/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/VTK/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/FLANN/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Qhull/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Boost/lib:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Boost/include:/mnt/c/Program Files/OpenNI2/Redist:/mnt/c/Program Files/OpenNI2/Tools:/mnt/c/Program Files/OpenNI2/Lib:/mnt/c/Installsoftware/TensorRT-7.2.3.4.Windows10.x86_64.cuda-10.2.cudnn8.1/TensorRT-7.2.3.4/lib:/mnt/c/Installsoftware/libtorch_cuda111/lib:/mnt/d/Installed/Microsoft VS Code/bin:/mnt/c/Installsoftware/VTK-9.2.2/install_release/bin:/mnt/c/Installsoftware/CMake/bin:/mnt/c/Installsoftware/opencv_build/install/x64/vc16/bin:/snap/bin'), ('WT_SESSION', '2376c0b2-5d4c-4fc3-a258-1c4ceb4694a0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ccb5a9dba.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/wlk/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wlk/workspace/autocar/build/src'), ('CONDA_EXE', '/home/wlk/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/wlk/anaconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.484447] (src) CommandEnded: {'returncode': 0}
+[14.498507] (src) JobProgress: {'identifier': 'src', 'progress': 'install'}
+[14.504231] (src) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wlk/workspace/autocar/build/src'], 'cwd': '/home/wlk/workspace/autocar/build/src', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'wlk'), ('GIT_ASKPASS', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}'), ('HOME', '/home/wlk'), ('CONDA_SHLVL', '1'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-66759183-9aff-4c1d-81c7-2d8f5b0e47fd.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wlk'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/706_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/home/wlk/anaconda3/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/mpich-4.1.2/bin:~/anaconda3/bin:/home/wlk/Install/Fast-DDS/Fast-DDS-Gen/scripts:/home/wlk/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli:/usr/local/mpich-4.1.2/bin:~/anaconda3/bin:/home/wlk/anaconda3/bin:/home/wlk/anaconda3/condabin:/home/wlk/Install/Fast-DDS/Fast-DDS-Gen/scripts:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Installsoftware/MPI/Bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/mnt/d/MyFiles/Opencv4.1/x64/vc16/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin:/mnt/c/Installsoftware/OpenCV4.5.1/opencv/build/x64/vc15/bin:/mnt/c/Installsoftware/QT/Qt5.9.9/5.9.9/msvc2017_64/bin:/mnt/c/Installsoftware/cudnn-11.3-windows-x64-v8.2.0.53/cuda/bin:/mnt/c/Installsoftware/opencv_build/install/x64/vc16/bin:/mnt/c/Program Files (x86)/dotnet:/mnt/c/Installsoftware/MiKTeX/miktex/bin/x64:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/lib:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/lib:/mnt/c/Installsoftware/VTK-9.2.2/install_release/bin:/mnt/d/Installed/qtcreator-11.0.2/6.6.0/msvc2019_64/lib:/mnt/d/Installed/qtcreator-11.0.2/6.6.0/msvc2019_64/bin:/mnt/c/Installsoftware/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin:/mnt/c/Installsoftware/Anaconda:/mnt/c/Installsoftware/Anaconda/Library/mingw-w64/bin:/mnt/c/Installsoftware/Anaconda/Library/usr/bin:/mnt/c/Installsoftware/Anaconda/Library/bin:/mnt/c/Installsoftware/Anaconda/Scripts:/mnt/c/Users/15938/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Bandizip:/mnt/c/Installsoftware/PyCharm 2020.1/bin:/mnt/c/Installsoftware/cudnn-10.1-windows10-x64-v8.0.5.39/lib/x64:/mnt/c/Installsoftware/texlive/2021/bin/win32:/mnt/c/Installsoftware/CLion/CLion 2019.3.3/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/VTK/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/FLANN/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Qhull/bin:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Boost/lib:/mnt/c/Installsoftware/PCL/PCL 1.12.1/3rdParty/Boost/include:/mnt/c/Program Files/OpenNI2/Redist:/mnt/c/Program Files/OpenNI2/Tools:/mnt/c/Program Files/OpenNI2/Lib:/mnt/c/Installsoftware/TensorRT-7.2.3.4.Windows10.x86_64.cuda-10.2.cudnn8.1/TensorRT-7.2.3.4/lib:/mnt/c/Installsoftware/libtorch_cuda111/lib:/mnt/d/Installed/Microsoft VS Code/bin:/mnt/c/Installsoftware/VTK-9.2.2/install_release/bin:/mnt/c/Installsoftware/CMake/bin:/mnt/c/Installsoftware/opencv_build/install/x64/vc16/bin:/snap/bin'), ('WT_SESSION', '2376c0b2-5d4c-4fc3-a258-1c4ceb4694a0'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3ccb5a9dba.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/wlk/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/wlk/workspace/autocar/build/src'), ('CONDA_EXE', '/home/wlk/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/wlk/anaconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.508740] (src) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.509261] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/ament_index/resource_index/package_run_dependencies/src\n'}
+[14.509495] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/ament_index/resource_index/parent_prefix_path/src\n'}
+[14.509737] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/environment/ament_prefix_path.sh\n'}
+[14.509963] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/environment/ament_prefix_path.dsv\n'}
+[14.510139] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/environment/path.sh\n'}
+[14.510434] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/environment/path.dsv\n'}
+[14.510630] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/local_setup.bash\n'}
+[14.510783] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/local_setup.sh\n'}
+[14.510836] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/local_setup.zsh\n'}
+[14.511075] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/local_setup.dsv\n'}
+[14.511351] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/package.dsv\n'}
+[14.511440] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/ament_index/resource_index/packages/src\n'}
+[14.511512] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/cmake/srcConfig.cmake\n'}
+[14.511573] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/cmake/srcConfig-version.cmake\n'}
+[14.511613] (src) StdoutLine: {'line': b'-- Installing: /home/wlk/workspace/autocar/install/src/share/src/package.xml\n'}
+[14.512848] (src) CommandEnded: {'returncode': 0}
+[14.542733] (-) TimerEvent: {}
+[14.643446] (-) TimerEvent: {}
+[14.692222] (src) JobEnded: {'identifier': 'src', 'rc': 0}
+[14.692730] (-) EventReactorShutdown: {}
