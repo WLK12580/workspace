@@ -3,6 +3,7 @@
 #include <iostream>
 #include <functional>
 #include <unordered_map>
+#include "../../Singleton/Singleton.hpp"
 typedef enum class EDataType
 {
     NUMBER,
@@ -10,13 +11,29 @@ typedef enum class EDataType
 } dataType;
 
 namespace AUTOCAR::DataBase {
-class MySql {
+class CMySql {
  public:
-  MySql();
-  ~MySql();
-  bool connect(const std::string &host, const std::string &user, const std::string &passwd, const std::string &dataBase,
-               unsigned int port);
+  CMySql();
+  ~CMySql();
+  bool connect();
   bool insertToTable(const std::string &tableName,std::unordered_map<std::string,std::tuple<dataType,std::string>>& insertData);
+
+public:
+ void initConfig(const std::string &host, const std::string &user, const std::string &passwd,
+                 const std::string &dataBase, unsigned int port);
+
+ private:
+  inline void setHost(const std::string &host) { host_ = host; }
+  inline void setUser(const std::string &user) { user_ = user; }
+  inline void setPasswd(const std::string &passwd) { passwd_ = passwd; }
+  inline void setDB(const std::string &database) { dataBase_ = database; }
+  inline void setPort(const int &port) { port_ = port; }
+  inline std::string getHost() { return host_; }
+  inline std::string getUser() { return user_; }
+  inline std::string getPasswd() { return passwd_; }
+  inline std::string getDatabase() { return dataBase_; }
+  inline int getPort() { return port_; }
+
  private:
   MYSQL *mysql_;
   std::string host_;
