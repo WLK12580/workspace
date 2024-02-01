@@ -1,9 +1,0 @@
-/home/wlk/workspace/autocar/build/CMakeFiles/uninstall.dir
-/home/wlk/workspace/autocar/build/CMakeFiles/src_uninstall.dir
-/home/wlk/workspace/autocar/build/CMakeFiles/test.dir
-/home/wlk/workspace/autocar/build/CMakeFiles/edit_cache.dir
-/home/wlk/workspace/autocar/build/CMakeFiles/rebuild_cache.dir
-/home/wlk/workspace/autocar/build/CMakeFiles/list_install_components.dir
-/home/wlk/workspace/autocar/build/CMakeFiles/install.dir
-/home/wlk/workspace/autocar/build/CMakeFiles/install/local.dir
-/home/wlk/workspace/autocar/build/CMakeFiles/install/strip.dir

@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+add_subdirectory(database)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
