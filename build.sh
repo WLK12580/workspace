@@ -1,10 +1,10 @@
 #!/bin/bash
 
-builddir="./build"
+builddir="./buildDir"
 if [ -d ${builddir} ];then
     echo "-- delete build"
     rm -rf ${builddir}
 fi  
 echo "-- delete build directory done!"
-cmake -B build
-cmake --build build/
+cmake -B builddir
+cmake --build builddir/
