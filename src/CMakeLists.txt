@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 add_subdirectory(database)
+add_subdirectory(imageprocess)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

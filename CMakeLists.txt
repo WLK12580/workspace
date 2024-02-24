@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(autocar)
 set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)  #强制要求c++20版本 防止编译器回退
+set(CMAKE_CXX_STANDARD_REQUIRED ON)  #强制要求c++23版本 防止编译器回退
 set(CMAKE_CXX_FLAGS"-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_DEBUG"-g")
 set(CMAKE_CXX_FLAGS_RELEASE"-O3")

@@ -1,0 +1,3 @@
+/home/wlk/workspace/autocar/src/imageprocess/build/CMakeFiles/opencv.dir
+/home/wlk/workspace/autocar/src/imageprocess/build/CMakeFiles/edit_cache.dir
+/home/wlk/workspace/autocar/src/imageprocess/build/CMakeFiles/rebuild_cache.dir

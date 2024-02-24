@@ -3,7 +3,7 @@
 #include <iostream>
 #include <functional>
 #include <unordered_map>
-#include "../../Singleton/Singleton.hpp"
+#include "Singleton.hpp"
 typedef enum class EDataType
 {
     NUMBER,

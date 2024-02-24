@@ -6,7 +6,7 @@ int main() {
   MYSQL mysql;
   mysql_init(&mysql);
   mysql_options(&mysql, MYSQL_SET_CHARSET_NAME, "utf8");
-  if (!mysql_real_connect(&mysql, "192.168.1.16", "root", "erjk", "henan", 3306, NULL, 0)) {
+  if (!mysql_real_connect(&mysql, "127.0.0.1", "root", "erjk", "henan", 3306, NULL, 0)) {
     std::cout <<"sql_errno="<<mysql_errno(&mysql)<<std::endl;
     return -1;
   }
