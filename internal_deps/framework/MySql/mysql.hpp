@@ -3,7 +3,6 @@
 #include <iostream>
 #include <functional>
 #include <unordered_map>
-#include "Singleton.hpp"
 typedef enum class EDataType
 {
     NUMBER,
@@ -16,7 +15,7 @@ class CMySql {
   CMySql();
   ~CMySql();
   bool connect();
-  bool insertToTable(const std::string &tableName,std::unordered_map<std::string,std::tuple<dataType,std::string>>& insertData);
+  bool insertToTable(const std::string &tableName,std::unordered_map<std::string,std::string>& insertData);
 
 public:
  void initConfig(const std::string &host, const std::string &user, const std::string &passwd,
@@ -33,6 +32,8 @@ public:
   inline std::string getPasswd() { return passwd_; }
   inline std::string getDatabase() { return dataBase_; }
   inline int getPort() { return port_; }
+  inline void setMysql(MYSQL *mysql){mysql_=mysql;}
+  inline MYSQL* getMySql(){return mysql_;}
 
  private:
   MYSQL *mysql_;
