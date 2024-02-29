@@ -18,18 +18,22 @@ void CMySql::initConfig(const std::string &host, const std::string &user, const 
 }
 bool CMySql::connect() {
   if (!mysql_real_connect(getMySql(), getHost().c_str(), getUser().c_str(), getPasswd().c_str(), getDatabase().c_str(), getPort(), nullptr, 0)) {
-    std::cout << "connect database failed\n";
+    printf("connect:%s\n", mysql_error(getMySql()));
     return false;
   }
   return true;
 }
-bool CMySql::insertToTable(const std::string &tableName, std::unordered_map<std::string, std::string> &insertData) {
+bool CMySql::insertToTable(const std::string &tableName, std::unordered_map<std::string, std::tuple<dataType,std::string>> &insertData) {
   // insertData容器中key存储的是表的字段，value:是对于字段的值,此处是单次插入：由于insertData不允许有重复的key
   std::string filedKey = "";
   std::string insertDataValue = "";
   for (auto beginIter = insertData.begin(), endIter = insertData.end(); beginIter != endIter; ++beginIter) {
     filedKey += beginIter->first + ",";
-    insertDataValue += "'" + beginIter->second + "'" + ",";
+    if(std::get<0>(beginIter->second) == dataType::NUMBER){
+      insertDataValue += std::get<1>(beginIter->second)+ ",";
+    }else{
+      insertDataValue += "'" + std::get<1>(beginIter->second) + "'" + ",";
+    }
   }
   filedKey.erase(filedKey.size() - 1);
   insertDataValue.erase(insertDataValue.size() - 1);

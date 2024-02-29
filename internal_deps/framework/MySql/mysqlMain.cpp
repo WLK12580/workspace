@@ -3,13 +3,26 @@ using namespace AUTOCAR::DataBase;
 int main(){
     CMySql mysql;
     mysql.initConfig("127.0.0.1","root","@Wlk210575","test_db",3306);
-    std::cout<<"connect_database_result="<<mysql.connect()<<std::endl;
+    if(!mysql.connect()){
+        std::cout<<"connect error\n";
+        return 0;
+    }
     std::string tableName="user";
-    std::unordered_map<std::string,std::string> map;
-    map.emplace("username","xiaosun");
-    map.emplace("passwd","986532");
-    map.emplace("birthdate","1993-08-21");
-    std::cout<<"insertSuccessed="<<mysql.insertToTable(tableName,map)<<"\n";
+    std::unordered_map<std::string,std::tuple<dataType,std::string>> map;
+    std::tuple<dataType,std::string> tupleData;
+    tupleData=std::make_tuple(dataType::STRING,"liubei");
+    map.emplace("username",tupleData);
+    tupleData=std::make_tuple(dataType::NUMBER,"32");
+    map.emplace("age",tupleData);
+    tupleData=std::make_tuple(dataType::STRING,"123456");
+    map.emplace("passwd",tupleData);
+    tupleData=std::make_tuple(dataType::STRING,"1992-01-21");
+    map.emplace("birthdate",tupleData);
+    if(mysql.insertToTable(tableName,map)){
+        std::cout<<"insertDataSuccessed\n";
+    } else{
+        std::cout<<"insertDataFailed\n";
+    }
 
     return 0;
 }

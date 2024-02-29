@@ -15,7 +15,7 @@ class CMySql {
   CMySql();
   ~CMySql();
   bool connect();
-  bool insertToTable(const std::string &tableName,std::unordered_map<std::string,std::string>& insertData);
+  bool insertToTable(const std::string &tableName,std::unordered_map<std::string,std::tuple<dataType,std::string>>& insertData);
 
 public:
  void initConfig(const std::string &host, const std::string &user, const std::string &passwd,
