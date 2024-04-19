@@ -10,13 +10,13 @@ int main(){
     std::string tableName="user";
     std::unordered_map<std::string,std::tuple<dataType,std::string>> map;
     std::tuple<dataType,std::string> tupleData;
-    tupleData=std::make_tuple(dataType::STRING,"wanglongkun");
+    tupleData=std::make_tuple(dataType::STRING,"xiaotong");
     map.emplace("username",tupleData);
-    tupleData=std::make_tuple(dataType::NUMBER,"30");
+    tupleData=std::make_tuple(dataType::NUMBER,"31");
     map.emplace("age",tupleData);
     tupleData=std::make_tuple(dataType::STRING,"123456");
     map.emplace("passwd",tupleData);
-    tupleData=std::make_tuple(dataType::STRING,"1993-01-21");
+    tupleData=std::make_tuple(dataType::STRING,"1993-09-19 12:20:06");
     map.emplace("birthdate",tupleData);
     if(mysql.insertToTable(tableName,map)){
         std::cout<<"insertDataSuccessed\n";
