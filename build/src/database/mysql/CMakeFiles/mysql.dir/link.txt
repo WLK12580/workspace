@@ -1,1 +1,0 @@
-/usr/bin/g++ CMakeFiles/mysql.dir/sql_test.cpp.o -o ../../../bin/mysql  -lmysqlclient 
