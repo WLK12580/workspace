@@ -1,0 +1,2 @@
+add_subdirectory(person_test)
+add_subdirectory(internal_deps)
