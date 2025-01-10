@@ -1,0 +1,313 @@
+import os
+import sys
+import time
+import tornado.ioloop
+import tornado.web
+import tornado.websocket
+from tornado.options import options, define
+import json
+import NckApi
+
+class APIHandler(tornado.web.RequestHandler):
+    def get(self):
+        AxisActPos = NckApi.GetNckData.CoordPos()
+        HomeStatus = NckApi.GetNckData.HomeStatus()
+        MaxSoftlimits = NckApi.GetNckData.MaxSoftlimits()
+        MinSoftlimits = NckApi.GetNckData.MinSoftlimits()
+        data = {
+                "id": "01",
+                "type": "HTTP_TORNADO",
+                "name": "NCK",
+                "description": "Tornado_HTTP",
+                "devices":[
+                    {
+                        "id": "0101",
+                        "type": "MACHINE",
+                        "name": "HMC-5Axis",
+                        "description": "5Axis ",
+                        "version": "1.0",
+                        "components": [
+                            {
+                                "id":"0101",
+                                "type":"SystemData",
+                                "name":"Data",
+                                "description":"GetData",
+                                "configs":[
+                                    {
+                                        "id":"010101",
+                                        "type":"VARIABLE ",
+                                        "name": "EnableStatus",
+                                        "value": NckApi.GetNckData.EnableStatus()
+                                    },
+                                    { 
+                                        "id":"010102",
+                                        "type":"VARIABLE ",
+                                        "name": "OverrideEnableStatus",
+                                        "value": NckApi.GetNckData.OverrideEnableStatus()
+                                    },
+                                    { 
+                                        "id":"010103",
+                                        "type":"VARIABLE ",
+                                        "name": "SpindleEnableStatus",
+                                        "value": NckApi.GetNckData.SpindleEnableStatus()
+                                    },
+                                    { 
+                                        "id":"010104",
+                                        "type":"VARIABLE ",
+                                        "name": "FeedRate",
+                                        "value": NckApi.GetNckData.FeedRate()
+                                    },
+                                    { 
+                                        "id":"010105",
+                                        "type":"VARIABLE ",
+                                        "name": "QuickFeedRate",
+                                        "value": NckApi.GetNckData.QuickFeedRate()
+                                    },
+                                    { 
+                                        "id":"010106",
+                                        "type":"VARIABLE ",
+                                        "name": "SpindleRate",
+                                        "value": NckApi.GetNckData.SpindleRate()
+                                    }
+                                ]
+                            },
+                            {
+                                "id":"0102",
+                                "type":"Axis",
+                                "name":"",
+                                "description":"",
+                                "components ":[
+                                    {
+                                        "id":"010201",
+                                        "type":"SCREW",
+                                        "name":"X",
+                                        "description":"",
+                                        "dataItems":[
+                                            {
+                                                "id":"01020101", 
+                                                "type":"POSITION", 
+                                                "name":"MachinePos", 
+                                                "value":"{:.3f}".format(AxisActPos[0]), 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020102", 
+                                                "type":"HOME", 
+                                                "name":"HomeStatus", 
+                                                "value":HomeStatus[0], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020103", 
+                                                "type":"LIMITS", 
+                                                "name":"MaxSoftlimits", 
+                                                "value":MaxSoftlimits[0], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020104", 
+                                                "type":"LIMITS", 
+                                                "name":"MinSoftlimits", 
+                                                "value":MinSoftlimits[0], 
+                                                "units":"mm"
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        "id":"010202",
+                                        "type":"SCREW",
+                                        "name":"Y",
+                                        "description":"",
+                                        "dataItems":[
+                                            {
+                                                "id":"01020201", 
+                                                "type":"POSITION", 
+                                                "name":"MachinePos", 
+                                                "value":"{:.3f}".format(AxisActPos[1]), 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020102", 
+                                                "type":"HOME", 
+                                                "name":"HomeStatus", 
+                                                "value":HomeStatus[1], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020103", 
+                                                "type":"LIMITS", 
+                                                "name":"MaxSoftlimits", 
+                                                "value":MaxSoftlimits[1], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020104", 
+                                                "type":"LIMITS", 
+                                                "name":"MinSoftlimits", 
+                                                "value":MinSoftlimits[1], 
+                                                "units":"mm"
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        "id":"010203",
+                                        "type":"SCREW",
+                                        "name":"Z",
+                                        "description":"",
+                                        "dataItems":[
+                                            {
+                                            "id":"01020301", 
+                                            "type":"POSITION", 
+                                            "name":"MachinePos", 
+                                            "value":"{:.3f}".format(AxisActPos[2]), 
+                                            "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020302", 
+                                                "type":"HOME", 
+                                                "name":"HomeStatus", 
+                                                "value":HomeStatus[2], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020303", 
+                                                "type":"LIMITS", 
+                                                "name":"MaxSoftlimits", 
+                                                "value":MaxSoftlimits[2], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020304", 
+                                                "type":"LIMITS", 
+                                                "name":"MinSoftlimits", 
+                                                "value":MinSoftlimits[2], 
+                                                "units":"mm"
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        "id":"010204",
+                                        "type":"SCREW",
+                                        "name":"A",
+                                        "description":"",
+                                        "dataItems":[
+                                            {
+                                                "id":"01020401", 
+                                                "type":"POSITION", 
+                                                "name":"MachinePos", 
+                                                "value":"{:.3f}".format(AxisActPos[3]), 
+                                                "units":"°"
+                                            },
+                                             {
+                                                "id":"01020402", 
+                                                "type":"HOME", 
+                                                "name":"HomeStatus", 
+                                                "value":HomeStatus[3], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020403", 
+                                                "type":"LIMITS", 
+                                                "name":"MaxSoftlimits", 
+                                                "value":MaxSoftlimits[3], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020404", 
+                                                "type":"LIMITS", 
+                                                "name":"MinSoftlimits", 
+                                                "value":MinSoftlimits[3], 
+                                                "units":"mm"
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        "id":"010205",
+                                        "type":"SCREW",
+                                        "name":"B",
+                                        "description":"",
+                                        "dataItems":[
+                                            {
+                                                "id":"01020501", 
+                                                "type":"POSITION", 
+                                                "name":"MachinePos", 
+                                                "value":"{:.3f}".format(AxisActPos[4]), 
+                                                "units":"°"
+                                            },
+                                             {
+                                                "id":"01020502", 
+                                                "type":"HOME", 
+                                                "name":"HomeStatus", 
+                                                "value":HomeStatus[4], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020503", 
+                                                "type":"LIMITS", 
+                                                "name":"MaxSoftlimits", 
+                                                "value":MaxSoftlimits[4], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020504", 
+                                                "type":"LIMITS", 
+                                                "name":"MinSoftlimits", 
+                                                "value":MinSoftlimits[4], 
+                                                "units":"mm"
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        "id":"010206",
+                                        "type":"SCREW",
+                                        "name":"C",
+                                        "description":"",
+                                        "dataItems":[
+                                            {
+                                                "id":"01020601", 
+                                                "type":"POSITION", 
+                                                "name":"MachinePos", 
+                                                "value":"{:.3f}".format(AxisActPos[5]), 
+                                                "units":"°"
+                                            },
+                                             {
+                                                "id":"01020602", 
+                                                "type":"HOME", 
+                                                "name":"HomeStatus", 
+                                                "value":HomeStatus[5], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020603", 
+                                                "type":"LIMITS", 
+                                                "name":"MaxSoftlimits", 
+                                                "value":MaxSoftlimits[5], 
+                                                "units":"mm"
+                                            },
+                                            {
+                                                "id":"01020604", 
+                                                "type":"LIMITS", 
+                                                "name":"MinSoftlimits", 
+                                                "value":MinSoftlimits[5], 
+                                                "units":"mm"
+                                            },
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                        
+                    }
+                ]
+        }
+        self.write(json.dumps(data))  
+    
+if __name__ == "__main__":
+    app = tornado.web.Application([
+        (r"/GetNckData", APIHandler),        
+    ],
+        debug=True,
+    )
+    server = tornado.httpserver.HTTPServer(app) 
+    server.listen(8888)
+    tornado.ioloop.IOLoop.instance().start()

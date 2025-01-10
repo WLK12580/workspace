@@ -1,0 +1,58 @@
+data = {
+                "id": "01",
+                "type": "HTTP_TORNADO",
+                "name": "NCK",
+                "description": "Tornado_HTTP",
+                "devices":[
+                    {
+                        "id": "0101",
+                        "type": "MACHINE",
+                        "name": "HMC-5Axis",
+                        "description": "5Axis ",
+                        "version": "1.0",
+                        "dataitem": [
+                            {
+                                {
+                                    "id":"510001",
+                                    "type":"VARIABLE ",
+                                    "name": "EnableStatus",
+                                    "value": NckApi.GetNckData.EnableStatus()
+                                },
+                                {
+                                    "id":"010102",
+                                    "type":"VARIABLE ",
+                                    "name": "OverrideEnableStatus",
+                                    "value": NckApi.GetNckData.OverrideEnableStatus()
+                                },
+                                {
+                                    "id":"010103",
+                                    "type":"VARIABLE ",
+                                    "name": "SpindleEnableStatus",
+                                    "value": NckApi.GetNckData.SpindleEnableStatus()
+                                },
+                                {
+                                    "id":"010104",
+                                    "type":"VARIABLE ",
+                                    "name": "FeedRate",
+                                    "value": NckApi.GetNckData.FeedRate()
+                                },
+                                {
+                                    "id":"010105",
+                                    "type":"VARIABLE ",
+                                    "name": "QuickFeedRate",
+                                    "value": NckApi.GetNckData.QuickFeedRate()
+                                },
+                                {
+                                    "id":"010106",
+                                    "type":"VARIABLE ",
+                                    "name": "SpindleRate",
+                                    "value": NckApi.GetNckData.SpindleRate()
+                                }
+                                {
+                                #.....
+                                }
+
+                            }
+                    }
+                ]
+        }
